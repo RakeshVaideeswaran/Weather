@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="com.example.android.weather.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp">
+
+        <EditText
+            android:onClick="AutocompletePlaces"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:hint="Enter City Name"
+            android:id="@+id/cityName"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/searchButton"
+            android:text="SEARCH"
+            android:onClick="FetchWeatherData"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:id="@+id/imgview"
+        android:layout_gravity="center"
+        style="@style/layoutStyle"/>
+
+    <LinearLayout
+        style="@style/layoutStyle"
+        android:id="@+id/CITY"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/textViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="CITY : "
+            android:gravity="center"
+            android:layout_weight="1"/>
+        <TextView
+            style="@style/textViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/city"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/layoutStyle"
+        android:id="@+id/TEMP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/textViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="TEMP : "
+            android:gravity="center"
+            android:layout_weight="1"/>
+        <TextView
+            style="@style/textViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/temp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/layoutStyle"
+        android:id="@+id/TEMPMAX"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/textViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="TEMP MAX. : "
+            android:gravity="center"
+            android:layout_weight="1"/>
+        <TextView
+            style="@style/textViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tempmax"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/layoutStyle"
+        android:id="@+id/TEMPMIN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/textViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="TEMP MIN. : "
+            android:gravity="center"
+            android:layout_weight="1"/>
+        <TextView
+            style="@style/textViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tempmin"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/layoutStyle"
+        android:id="@+id/PRESSURE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/textViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="PRESSURE : "
+            android:gravity="center"
+            android:layout_weight="1"/>
+        <TextView
+            style="@style/textViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/pressure"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/layoutStyle"
+        android:id="@+id/HUMIDITY"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/textViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="HUMIDITY : "
+            android:gravity="center"
+            android:layout_weight="1"/>
+        <TextView
+            style="@style/textViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/humidity"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
